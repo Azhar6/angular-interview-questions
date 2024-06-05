@@ -389,23 +389,61 @@
   **[⬆ Back to Top](#table-of-contents)**
 
 6. ### What are directives?
-    Directives add behaviour to an existing DOM element or an existing component instance.
-    ```typescript
-    import { Directive, ElementRef, Input } from '@angular/core';
+	In Angular, directives are like building blocks that allow you to extend HTML with new behavior or custom functionality. They let you create reusable components and manipulate 	the DOM (Document Object Model) dynamically.
 
-    @Directive({ selector: '[myHighlight]' })
-    export class HighlightDirective {
-        constructor(el: ElementRef) {
-           el.nativeElement.style.backgroundColor = 'yellow';
-        }
-    }
-    ```
+	There are mainly three types of directives in Angular:
 
-    Now this directive extends HTML element behavior with a yellow background as below
-    ```html
-    <p myHighlight>Highlight me!</p>
-    ```
-  **[⬆ Back to Top](#table-of-contents)**
+	1. **Component Directives**: These are the most common directives you'll use in Angular. They allow you to create custom HTML elements with their own behavior, styling, and 		     functionality. For example:
+
+   		```typescript
+    			import { Component } from '@angular/core';
+
+   			 @Component({
+   			   selector: 'app-custom',
+   			   template: '<p>This is a custom component!</p>'
+   			 })
+  		  export class CustomComponent {}
+ 	   ```
+
+   	 In this example, `CustomComponent` is a directive that you can use as `<app-custom></app-custom>` in your HTML.
+
+	2. **Attribute Directives**: These directives modify the behavior or appearance of an element, component, or another directive. They are applied as attributes on existing HTML 	     elements. For example:
+
+	    ```typescript
+	    import { Directive, ElementRef, HostListener } from '@angular/core';
+	
+	    @Directive({
+	      selector: '[appHighlight]'
+	    })
+	    export class HighlightDirective {
+	      constructor(private el: ElementRef) {}
+	
+	      @HostListener('mouseenter') onMouseEnter() {
+	        this.highlight('yellow');
+	      }
+	
+	      @HostListener('mouseleave') onMouseLeave() {
+	        this.highlight(null);
+	      }
+	
+	      private highlight(color: string) {
+	        this.el.nativeElement.style.backgroundColor = color;
+	      }
+	    }
+	    ```
+
+	    You can use this directive like `<p appHighlight>Hover me to highlight!</p>`, which will highlight the paragraph when hovered.
+	
+	3. **Structural Directives**: These directives change the DOM layout by adding, removing, or manipulating elements. They are prefixed with an asterisk (*) in the HTML. For 		example:
+	
+	    ```html
+	    <div *ngIf="isVisible">Visible content</div>
+	    ```
+	
+	    Here, `*ngIf` is a structural directive which conditionally includes or excludes the div based on the value of `isVisible`.
+	
+	Directives are powerful tools in Angular for creating dynamic and interactive web applications. They provide a clean way to extend HTML and add extra functionality without 		cluttering your templates with complex logic.
+ **[⬆ Back to Top](#table-of-contents)**
 
 7. ### What are components?
     Components are the most basic UI building block of an Angular app, which form a tree of Angular components. These components are a subset of directives. Unlike directives, components always have a template, and only one component can be instantiated per element in a template.
