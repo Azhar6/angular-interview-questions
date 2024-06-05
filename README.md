@@ -395,15 +395,15 @@
 
 	1. **Component Directives**: These are the most common directives you'll use in Angular. They allow you to create custom HTML elements with their own behavior, styling, and 		     functionality. For example:
 
-   		```typescript
-    			import { Component } from '@angular/core';
+   	```typescript
+    		import { Component } from '@angular/core';
 
-   			 @Component({
-   			   selector: 'app-custom',
-   			   template: '<p>This is a custom component!</p>'
-   			 })
-  		  export class CustomComponent {}
- 	   ```
+   		@Component({
+   			selector: 'app-custom',
+   			template: '<p>This is a custom component!</p>'
+   		})
+  		export class CustomComponent {}
+ 	```
 
    	 In this example, `CustomComponent` is a directive that you can use as `<app-custom></app-custom>` in your HTML.
 
@@ -443,7 +443,8 @@
 	    Here, `*ngIf` is a structural directive which conditionally includes or excludes the div based on the value of `isVisible`.
 	
 	Directives are powerful tools in Angular for creating dynamic and interactive web applications. They provide a clean way to extend HTML and add extra functionality without 		cluttering your templates with complex logic.
- **[⬆ Back to Top](#table-of-contents)**
+ 
+**[⬆ Back to Top](#table-of-contents)**
 
 7. ### What are components?
     Components are the most basic UI building block of an Angular app, which form a tree of Angular components. These components are a subset of directives. Unlike directives, components always have a template, and only one component can be instantiated per element in a template.
