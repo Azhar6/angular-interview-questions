@@ -320,40 +320,40 @@
        - **Angular**: Uses a component-based architecture.
 
     2. **Language**:
-      - **AngularJS**: Written in JavaScript.
-      - **Angular**: Written in TypeScript, which is a superset of JavaScript.
+       - **AngularJS**: Written in JavaScript.
+       - **Angular**: Written in TypeScript, which is a superset of JavaScript.
 
     3. **Mobile Support**:
-      - **AngularJS**: Not optimized for mobile development.
-      - **Angular**: Designed with mobile support in mind.
+       - **AngularJS**: Not optimized for mobile development.
+       - **Angular**: Designed with mobile support in mind.
 
     4. **Performance**:
-      - **AngularJS**: Slower due to its two-way data binding and digest cycle.
-      - **Angular**: Faster because of improved data binding and the use of a more efficient change detection mechanism.
+       - **AngularJS**: Slower due to its two-way data binding and digest cycle.
+       - **Angular**: Faster because of improved data binding and the use of a more efficient change detection mechanism.
 
     5. **Dependency Injection**:
-      - **AngularJS**: Has a less flexible dependency injection system.
-      - **Angular**: Features a more powerful and flexible dependency injection system.
+       - **AngularJS**: Has a less flexible dependency injection system.
+       - **Angular**: Features a more powerful and flexible dependency injection system.
 
     6. **Tooling and Ecosystem**:
-      - **AngularJS**: Limited tooling support.
-      - **Angular**: Extensive tooling support, including the Angular CLI for project scaffolding and development.
+       - **AngularJS**: Limited tooling support.
+       - **Angular**: Extensive tooling support, including the Angular CLI for project scaffolding and development.
 
    7. **Routing**:
-      - **AngularJS**: Uses the ngRoute module or third-party solutions.
-      - **Angular**: Uses the @angular/router module with advanced features.
+       - **AngularJS**: Uses the ngRoute module or third-party solutions.
+       - **Angular**: Uses the @angular/router module with advanced features.
 
    8. **Backward Compatibility**:
-      - **AngularJS**: AngularJS applications require significant changes to upgrade to Angular.
-      - **Angular**: Built as a complete rewrite, it is not backward compatible with AngularJS.
+       - **AngularJS**: AngularJS applications require significant changes to upgrade to Angular.
+       - **Angular**: Built as a complete rewrite, it is not backward compatible with AngularJS.
 
    9. **Learning Curve**:
-      - **AngularJS**: Easier to learn due to its simpler architecture.
-      - **Angular**: Steeper learning curve due to the use of TypeScript and advanced concepts.
+       - **AngularJS**: Easier to learn due to its simpler architecture.
+       - **Angular**: Steeper learning curve due to the use of TypeScript and advanced concepts.
 
    10. **Release Versions**:
-      - **AngularJS**: Refers to versions 1.x.
-      - **Angular**: Refers to versions 2 and above, often simply called Angular.
+       - **AngularJS**: Refers to versions 1.x.
+       - **Angular**: Refers to versions 2 and above, often simply called Angular.
 
   **[⬆ Back to Top](#table-of-contents)**
 
