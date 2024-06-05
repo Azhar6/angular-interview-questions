@@ -379,11 +379,12 @@
 
 5. ### What are the key components of Angular?
     Angular has the key components below,
-    1. **Component:** These are the basic building blocks of an Angular application to control HTML views.
-    2. **Modules:** An Angular module is a set of angular basic building blocks like components, directives, services etc. An application is divided into logical pieces and each piece of code is called as "module" which perform a single task.
-    3. **Templates:** These represent the views of an Angular application.
-    4. **Services:** Are used to create components which can be shared across the entire application.
-    5. **Metadata:** This can be used to add more data to an Angular class.
+	1. **Components**: The building blocks of an Angular application, representing distinct parts of the UI.
+	2. **Templates**: Define the HTML view and use Angular's binding syntax to connect the view to the component's data.
+	3. **Services**: Provide business logic and data access, shared across multiple components.
+	4. **Dependency Injection**: A design pattern used to efficiently manage the dependencies of various components and services.
+	5. **Routing**: Manages navigation between different views or components.
+	6. **Modules**: Group related components, services, and other code, facilitating organization and code management. 
 
   **[⬆ Back to Top](#table-of-contents)**
 
