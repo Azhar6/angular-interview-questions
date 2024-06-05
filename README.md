@@ -358,22 +358,16 @@
   **[⬆ Back to Top](#table-of-contents)**
 
 3. ### What is TypeScript?
-    TypeScript is a strongly typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await and many other features, and compiles to plain JavaScript. Angular is written entirely in TypeScript as a primary language.
-    You can install TypeScript globally as
-    ```cmd
-    npm install -g typescript
-    ```
-    Let's see a simple example of TypeScript usage:-
-    ```typescript
-    function greeter(person: string) {
-        return "Hello, " + person;
-    }
+    Definition of TypeScript in bullet points:
 
-    let user = "Sudheer";
-
-    document.body.innerHTML = greeter(user);
-    ```
-    The greeter method allows only string type as argument.
+	- TypeScript is an open-source programming language developed by Microsoft.
+	- It is a superset of JavaScript, adding static typing.
+	- Allows defining types for variables, function parameters, and return values.
+	- Helps catch errors during compile time, improving code reliability and maintainability.
+	- Introduces object-oriented features such as classes and interfaces.
+	- Transpiles to plain JavaScript, ensuring compatibility with any JavaScript environment.
+	- Offers enhanced development tools and editor support for better autocompletion, type checking, and refactoring.
+	- Allows gradual adoption, as existing JavaScript code is valid in TypeScript.
 
   **[⬆ Back to Top](#table-of-contents)**
 
